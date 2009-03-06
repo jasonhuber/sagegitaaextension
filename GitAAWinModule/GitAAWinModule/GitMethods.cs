@@ -11,6 +11,14 @@ namespace GitAAWinModule
 {
     public class GitMethods : ModuleInit<UIWorkItem>, IModuleConfigurationProvider
     {
+        #region Command Handlers
+        [CommandHandler(UriConstants.CmdPull)]
+        public void PullCommand(object sender, EventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show("I want to pull from my Git Repo..");
+        }
+        #endregion
+
         protected override void Load()
         {
             base.Load();

@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Module ModuleTypeName="GitAAWinModule, GitMethods"
 xmlns="urn:schemas-sage-com:Module">
+  <Localization>
+    <ResourceManager Alias="Git" ResourceAssembly="GitAAWinModule"
+                     ResourceNamespace="GitAAWinModule.res"/>
+  </Localization>
+
   <UIElements>
     <UIExtensionSite Uri="mnu://MainMenu">
       <ChildElements>
@@ -13,6 +18,50 @@ xmlns="urn:schemas-sage-com:Module">
           </Properties>
         </UIElement>
       </ChildElements>
+      
+    </UIExtensionSite>
+    <UIExtensionSite Uri="mnu://MainMenu/Git">
+      <ChildElements>
+        <UIElement Uri="mnu://MainMenu/Git/Commit"
+        TypeName="ToolStripMenuItem"
+        RegisterAsSite="true"
+        RegistrationPropertyName="DropDownItems">
+          <Properties>
+            <Property Name="Text">Commit</Property>
+            <Property Name="Image">{Git:Git}</Property>
+          </Properties>
+        </UIElement>
+      </ChildElements>
+
+    </UIExtensionSite>
+    <UIExtensionSite Uri="mnu://MainMenu/Git">
+      <ChildElements>
+        <UIElement Uri="mnu://MainMenu/Git/Upload"
+        TypeName="ToolStripMenuItem"
+        RegisterAsSite="true"
+        RegistrationPropertyName="DropDownItems">
+          <Properties>
+            <Property Name="Text">Push</Property>
+            <Property Name="Image">{Git:Upload}</Property>
+          </Properties>
+        </UIElement>
+      </ChildElements>
+
+    </UIExtensionSite>
+    <UIExtensionSite Uri="mnu://MainMenu/Git">
+      <ChildElements>
+        <UIElement Uri="mnu://MainMenu/Git/Download"
+        TypeName="ToolStripMenuItem"
+        RegisterAsSite="true"
+        RegistrationPropertyName="DropDownItems"
+                   Command="cmd://GitAAWinModule/Pull">
+          <Properties>
+            <Property Name="Text">Pull</Property>
+            <Property Name="Image">{Git:Download}</Property>
+          </Properties>
+        </UIElement>
+      </ChildElements>
+
     </UIExtensionSite>
   </UIElements>
 </Module>
