@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Module ModuleTypeName="GitAAWinModule, GitMethods"
+xmlns="urn:schemas-sage-com:Module">
+  <UIElements>
+    <UIExtensionSite Uri="mnu://MainMenu">
+      <ChildElements>
+        <UIElement Uri="mnu://MainMenu/Git"
+        TypeName="ToolStripMenuItem"
+        RegisterAsSite="true"
+        RegistrationPropertyName="DropDownItems">
+          <Properties>
+            <Property Name="Text">Git</Property>
+          </Properties>
+        </UIElement>
+      </ChildElements>
+    </UIExtensionSite>
+  </UIElements>
+</Module>
