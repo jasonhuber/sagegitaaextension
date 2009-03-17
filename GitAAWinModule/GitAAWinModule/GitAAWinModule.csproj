@@ -56,9 +56,24 @@
       <HintPath>..\..\..\..\..\Program Files\SalesLogix\ReferenceAssemblies\Sage.Platform.Application.UI.WinForms.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sage.Platform.FileSystem, Version=7.5.1.1731, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\SalesLogix\ReferenceAssemblies\Sage.Platform.FileSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sage.Platform.FileSystem.UI.WinForms, Version=7.5.1.1731, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\SalesLogix\ReferenceAssemblies\Sage.Platform.FileSystem.UI.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sage.Platform.IDEModule, Version=7.5.1.1731, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Program Files\SalesLogix\ReferenceAssemblies\Sage.Platform.IDEModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Sage.Platform.Projects, Version=7.5.1.1731, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\SalesLogix\ReferenceAssemblies\Sage.Platform.Projects.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
